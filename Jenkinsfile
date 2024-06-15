@@ -48,7 +48,7 @@ pipeline {
                         sh '''
                         cd myapp
                         python3 app.py
-                        python3 app.py --args=(foo,bar)
+                        python3 app.py --name="Daisy"
                         '''
                     } catch (err) {
                         // Throws error to the console, sets env vars for logging
